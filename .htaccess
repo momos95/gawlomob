@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^(css|Images|js)/(.*?)$ gawlomob/$1/$2 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php
